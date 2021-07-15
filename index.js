@@ -12,12 +12,12 @@ var smtpTransport = nodemailer.createTransport({
 
 // send email without attachment
 var mailOptions = {
-  from: "rajpaliprakhar23@gmail.com",
-  to: "akshatsinha91@gmail.com",
-  //   bcc : "suresh@gmail.com", // bcc is optional.
+  from: "<YOUR EMAIL ID>",
+  to: "<RECIEVER EMAIL ID>",
+  //   bcc : "<BCC RECIEVER ID>", // bcc is optional.
   subject: "<Subject>",
   text: "<Body>",
-//   html: "<HTML>"
+  //   html: "<HTML>"
 };
 
 smtpTransport.sendMail(mailOptions, function (error, res) {
@@ -32,8 +32,8 @@ smtpTransport.sendMail(mailOptions, function (error, res) {
 
 // send email with attachment
 // var mailOptions={
-//                   from:"srinivas@gmail.com",
-//                   to : "mahesh@gmail.com",
+//                   from: "<YOUR EMAIL ID>",
+//   to: "<EMAIL ID TO WHOM YOU WANT TO SEND>",
 //                   subject : "email with attachment" ,
 //                   text : "This is the body part",
 //                   attachments : [{
